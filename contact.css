@@ -1,0 +1,253 @@
+/* General reset to remove default margins, paddings, and apply box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    display: flex; /* Flex layout for easy alignment */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Align items vertically */
+    padding: 20px;
+    background-color: #333; /* Dark background for header */
+    color: white; /* White text for contrast */
+}
+
+/* Logo styling inside header */
+header .logo {
+    display: flex; /* Flex for aligning text and image horizontally */
+    align-items: center;
+}
+
+header .logo h3 {
+    margin: 0;
+    padding-right: 10px;
+    font-size: 24px; /* Larger text for logo title */
+    font-weight: bold;
+    color: white;
+}
+
+/* Remove underline for links in the logo */
+header .logo a {
+    text-decoration: none;
+}
+
+header .logo img {
+    height: 50px; /* Standard logo height */
+}
+
+/* Navigation menu styling */
+header nav ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Display links inline */
+    gap: 15px; /* Spacing between links */
+}
+
+header nav ul li a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Add padding for better click area */
+}
+
+/* Hover effect for navigation links */
+header nav ul li a:hover {
+    background-color: #555; /* Darker background on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Main content container */
+main {
+    max-width: 900px; /* Limit width for readability */
+    margin: 40px auto; /* Center the main container */
+    padding: 20px;
+    background-color: white; /* White background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Main heading styling */
+main h2 {
+    font-size: 28px; /* Large font size for headings */
+    color: #333; /* Dark text */
+    margin-bottom: 15px; /* Space below heading */
+    text-align: center; /* Center-align text */
+}
+
+/* Paragraph styling in the main section */
+main p {
+    font-size: 16px;
+    color: #777; /* Softer text color */
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Contact Form styling */
+#contactForm {
+    display: flex; /* Flex layout for stacked form fields */
+    flex-direction: column; /* Vertical alignment */
+    gap: 15px; /* Space between form elements */
+    max-width: 600px; /* Limit form width */
+    margin: 0 auto; /* Center the form */
+}
+
+/* Form label styling */
+#contactForm label {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+/* Input and textarea styling for forms */
+#contactForm input,
+#contactForm textarea {
+    width: 100%; /* Full width input fields */
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below inputs */
+}
+
+/* Textarea minimum height */
+#contactForm textarea {
+    min-height: 120px;
+}
+
+/* Button styling for form submission */
+#contactForm button {
+    padding: 14px;
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect for button */
+#contactForm button:hover {
+    background-color: #555;
+}
+
+/* Contact Information section */
+.contact-info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-info h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #777;
+    margin: 5px 0;
+}
+
+/* Social Media Section */
+.social-media {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-media h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Social media link styling */
+.social-media a {
+    color: #0073e6; /* Blue links */
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+/* Hover effect for social media links */
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Map Section */
+.map {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.map iframe {
+    width: 100%; /* Full width map */
+    height: 300px;
+    border: 0; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Footer styling */
+footer {
+    display: flex; /* Flex layout for alignment */
+    justify-content: space-between; /* Space between footer elements */
+    align-items: center;
+    padding: 20px;
+    background-color: #333; /* Dark footer background */
+    color: #fff; /* White text */
+    font-size: 0.9rem;
+}
+
+/* Footer links */
+footer div a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Hover effect for footer links */
+footer div a:hover {
+    color: #ccc; /* Light gray on hover */
+}
+
+/* Footer button */
+footer button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for footer button */
+footer button:hover {
+    background-color: #777;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack logo and nav vertically */
+        text-align: center; /* Center-align content */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px;
+    }
+
+    footer {
+        flex-direction: column; /* Stack footer elements vertically */
+        text-align: center;
+    }
+}

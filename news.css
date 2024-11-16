@@ -1,0 +1,190 @@
+/* General Reset: Removes default styles for consistent behavior across browsers */
+* {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default paddings */
+    box-sizing: border-box; /* Include padding and borders in width/height calculations */
+  }
+  
+  /* Body Styling: Sets the base styles for the page */
+  body {
+    font-family: Arial, sans-serif; /* Default font for the site */
+    line-height: 1.6; /* Improved text readability */
+    color: #333; /* Neutral dark text color */
+    background-color: #f4f4f4; /* Light gray background for contrast */
+  }
+  
+  /* Header Styling: Layout for the site header */
+  header {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Vertically center items */
+    padding: 20px; /* Space around the header content */
+    background-color: #333; /* Dark background for header */
+    color: white; /* White text for contrast */
+  }
+  
+  /* Logo Container: Aligns logo text and image */
+  header .logo {
+    display: flex; /* Flexbox for logo layout */
+    align-items: center; /* Center-align logo elements */
+  }
+  
+  /* Logo Text: Style the heading inside the logo */
+  header .logo h3 {
+    margin: 0; /* Remove margin */
+    padding-right: 10px; /* Space between text and logo image */
+    font-size: 24px; /* Medium font size */
+    font-weight: bold; /* Bold text */
+    color: white; /* White text */
+  }
+  
+  /* Logo Link: Removes underline for clickable logo */
+  header .logo a {
+    text-decoration: none;
+  }
+  
+  /* Logo Image: Sets a consistent height */
+  header .logo img {
+    height: 50px; /* Fixed logo image height */
+  }
+  
+  /* Navigation Menu: Styling for navigation links */
+  header nav ul {
+    list-style-type: none; /* Remove bullets */
+    display: flex; /* Inline layout for links */
+    gap: 15px; /* Space between navigation items */
+  }
+  
+  /* Navigation Links: Basic styling */
+  header nav ul li a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Add padding for a clickable area */
+  }
+  
+  /* Navigation Links Hover: Add hover effect */
+  header nav ul li a:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    border-radius: 5px; /* Rounded corners for hover effect */
+  }
+  
+  /* Main Content Area: Styles for the central content container */
+  main {
+    max-width: 800px; /* Restrict width for better readability */
+    margin: 40px auto; /* Center-align with top/bottom spacing */
+    padding: 20px; /* Add padding inside the container */
+    background-color: white; /* White background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* News List Title: Styles for the news section heading */
+  .news-list h1 {
+    font-size: 32px; /* Large heading font size */
+    color: #333; /* Darker color for emphasis */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center-align the title */
+  }
+  
+  /* Individual News Item: Container styles */
+  .news-item {
+    margin-bottom: 30px; /* Space between news items */
+    padding-bottom: 20px; /* Space within each item */
+    border-bottom: 1px solid #ddd; /* Divider line between items */
+  }
+  
+  /* News Item Image: Responsive and styled images */
+  .news-item img {
+    width: 100%; /* Full width to fit container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space below the image */
+  }
+  
+  /* News Item Heading: Style for individual news titles */
+  .news-item h2 {
+    font-size: 24px; /* Medium font size */
+    color: #555; /* Muted dark color */
+    margin: 10px 0; /* Space around the title */
+  }
+  
+  /* News Item Description: Style for news text content */
+  .news-item p {
+    font-size: 18px; /* Standard readable font size */
+    color: #666; /* Muted gray text */
+    line-height: 1.6; /* Improve readability */
+  }
+  
+  /* News Item Link: Styling for "Read more" links */
+  .news-item a {
+    color: #0073e6; /* Blue for clickable links */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* News Item Link Hover: Add hover effect for links */
+  .news-item a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  /* Footer Styling: Layout and styles for footer */
+  footer {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space out footer elements */
+    align-items: center; /* Vertically center footer content */
+    padding: 20px; /* Space around footer content */
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    font-size: 0.9rem; /* Small font size */
+  }
+  
+  /* Footer Links: Basic styling for links in footer */
+  footer div a {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Space between footer links */
+  }
+  
+  /* Footer Links Hover: Add hover effect */
+  footer div a:hover {
+    color: #ccc; /* Light gray text on hover */
+  }
+  
+  /* Footer Button: Styles for buttons in the footer */
+  footer button {
+    padding: 10px 15px; /* Button size */
+    font-size: 0.9rem; /* Font size */
+    background-color: #555; /* Button background */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: background-color 0.3s; /* Smooth hover effect */
+  }
+  
+  /* Footer Button Hover: Change background on hover */
+  footer button:hover {
+    background-color: #777; /* Slightly lighter on hover */
+  }
+  
+  /* Responsive Design: Adjust layout for screens smaller than 768px */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column; /* Stack header content */
+      align-items: center; /* Center-align header elements */
+    }
+  
+    header nav ul {
+      flex-direction: column; /* Stack navigation links vertically */
+      gap: 10px; /* Reduce space between links */
+    }
+  
+    footer {
+      flex-direction: column; /* Stack footer content */
+      text-align: center; /* Center-align footer content */
+      gap: 10px; /* Add spacing between footer elements */
+    }
+  
+    footer div {
+      margin-bottom: 10px; /* Add space for better stacking */
+    }
+  }
+  

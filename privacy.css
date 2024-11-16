@@ -1,0 +1,177 @@
+/* General Reset: Removes default margin, padding, and ensures consistent sizing */
+* {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Includes padding and border in element size */
+}
+
+/* Body Styling: Sets overall font and background for the page */
+body {
+    font-family: Arial, sans-serif; /* Sets the font style */
+    line-height: 1.6; /* Adjusts spacing between lines for readability */
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Neutral text color for readability */
+}
+
+/* Header Styling: Creates a top navigation bar */
+header {
+    display: flex; /* Enables flex layout */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Centers items vertically */
+    padding: 20px; /* Adds space inside the header */
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White text for readability */
+}
+
+/* Logo Styling: Aligns logo text and image */
+header .logo {
+    display: flex; /* Flex layout for logo items */
+    align-items: center; /* Centers text and image vertically */
+}
+
+/* Logo Text Styling */
+header .logo h3 {
+    margin: 0; /* Removes default margin */
+    padding-right: 10px; /* Adds space between text and image */
+    font-size: 24px; /* Increases text size */
+    font-weight: bold; /* Makes text bold */
+    color: white; /* Ensures text color matches the theme */
+}
+
+/* Logo Link Styling: Ensures logo is clickable without underline */
+header .logo a {
+    text-decoration: none; /* Removes underline */
+}
+
+/* Logo Image: Sets a consistent height */
+header .logo img {
+    height: 50px; /* Restricts image height */
+}
+
+/* Navigation Menu Styling */
+header nav ul {
+    list-style-type: none; /* Removes default list styling */
+    display: flex; /* Displays navigation links inline */
+    gap: 15px; /* Adds space between navigation items */
+}
+
+/* Navigation Links: Basic styling */
+header nav ul li a {
+    color: white; /* White text for contrast */
+    text-decoration: none; /* Removes underline */
+    padding: 5px 10px; /* Adds clickable area */
+}
+
+/* Navigation Links Hover: Highlights links on hover */
+header nav ul li a:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    border-radius: 5px; /* Adds rounded corners */
+}
+
+/* Main Content: Styling for the central content container */
+main {
+    max-width: 1000px; /* Restricts maximum width for readability */
+    margin: 40px auto; /* Centers the content with vertical spacing */
+    padding: 20px; /* Adds space inside the container */
+    background-color: white; /* White background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners for a polished look */
+}
+
+/* Privacy Policy Intro: Styling for the main heading */
+.privacy-policy h2 {
+    font-size: 32px; /* Large font size for emphasis */
+    color: #333; /* Neutral dark color */
+    margin-bottom: 20px; /* Adds space below the heading */
+    text-align: center; /* Centers the heading */
+}
+
+/* Privacy Policy Paragraphs: Descriptive text styling */
+.privacy-policy p {
+    font-size: 16px; /* Standard font size */
+    color: #777; /* Muted color for less emphasis */
+    text-align: justify; /* Aligns text evenly on both sides */
+    margin-bottom: 20px; /* Adds spacing between paragraphs */
+}
+
+/* Policy Section Headings: Subheadings for policy details */
+.policy-content h3 {
+    font-size: 28px; /* Larger font size for subheadings */
+    margin-top: 30px; /* Adds space above subheadings */
+    color: #333; /* Dark text color for emphasis */
+}
+
+/* Policy Section Paragraphs: Descriptive content styling */
+.policy-content p {
+    font-size: 16px; /* Standard font size */
+    color: #555; /* Neutral text color */
+    text-align: justify; /* Aligns text evenly on both sides */
+    margin-bottom: 15px; /* Adds spacing between paragraphs */
+}
+
+/* Footer Styling: Layout and design for the footer */
+footer {
+    display: flex; /* Flex layout for alignment */
+    justify-content: space-between; /* Space out footer elements */
+    align-items: center; /* Centers items vertically */
+    padding: 20px; /* Adds space inside the footer */
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    font-size: 0.9rem; /* Smaller font for footer text */
+}
+
+/* Footer Links: Styling for clickable links in the footer */
+footer div a {
+    color: #fff; /* White text */
+    text-decoration: none; /* Removes underline */
+    margin: 0 10px; /* Adds space between links */
+}
+
+/* Footer Links Hover: Changes color on hover */
+footer div a:hover {
+    color: #ccc; /* Lighter text color for hover effect */
+}
+
+/* Footer Button: Basic styling for footer buttons */
+footer button {
+    padding: 10px 15px; /* Adds size to buttons */
+    font-size: 0.9rem; /* Small font size for buttons */
+    background-color: #555; /* Neutral button background */
+    color: #fff; /* White text */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Footer Button Hover: Changes button color on hover */
+footer button:hover {
+    background-color: #777; /* Slightly lighter background on hover */
+}
+
+/* Responsive Design: Adjusts layout for smaller screens */
+@media (max-width: 768px) {
+    /* Stack header items vertically */
+    header {
+        flex-direction: column;
+        align-items: center; /* Center-align items */
+    }
+
+    /* Stack navigation links vertically */
+    header nav ul {
+        flex-direction: column;
+        gap: 10px; /* Reduce spacing for compact view */
+    }
+
+    /* Center-align footer content and stack vertically */
+    footer {
+        flex-direction: column;
+        text-align: center; /* Center-align text */
+        gap: 15px; /* Add spacing between elements */
+    }
+
+    /* Footer links: Add vertical spacing for stacked layout */
+    footer div {
+        margin-bottom: 10px;
+    }
+}
